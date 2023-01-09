@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>BC1</title>
+        <link rel="icon" href="./logo_esen.png" type="image/icon type">
+        <meta charset="Utf-8">
+        <meta name="keywords" content="esen,esen calculator,esen manouba,calculer moyen esen">
+        <meta name="description" content="This is just a calculator that help esen students from first year to last year to calculate there exams results"/>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script src="./BC1_Semester1.JS" type="text/javascript"></script>
+    </head>
+    <body style="background-color: darkgray;">
+
+        <header>
+            <div class="div-1">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html"><img alt="logo_esen"
+                                    class="logo" src="./logo.png"></a></li>
+                        <li><a href="./BC1.html">BC1</a></li>
+                        <li><a href="./BC2.html">BC2</a></li>
+                        <li><a href="./BI.html">BI</a></li>
+                        <li><a href="./bis.html">BIS</a></li>
+                        <li><a href="./E-business.html">E-business</a></li>
+                        <a href="Sign_in.html" style="color: black;"><div
+                                class="button"> <i class="fa-solid fa-user"></i>
+                                Sign In </div></a>
+                    </ul>
+                </nav>
+                <h1 class="title">Licence en Business Computing en Business
+                    Information System</h1>
+            </div>
+        </header>
+        <section>
+            <img src="./BC.png" class="picture">
+            <div>
+                <h2>Objectifs de la formation</h2>
+                <p class="text">La licence Business Computing permet d’acquérir
+                    des connaissances en informatique et en gestion adaptées aux
+                    nouvelles exigences des entreprises en matière de
+                    digitalisation. La formation développe autant les
+                    compétences techniques et les outils de management que les
+                    qualités personnelles, compétences devenues essentielles sur
+                    le marché du travail.
+                    La licence se décline en un tronc commun suivi d’une
+                    spécialisation dans le cadre d’un des deux parcours.
+                    <h2>Tronc Commun</h2>
+                    <p>Le tronc commun s’étale sur 3 semestres dédiés à
+                        l’acquisition des fondamentaux de l’informatique de
+                        gestion, de la gestion elle-même, ainsi que des
+                        compétences transverses (langues, culture,
+                        communication, travail collaboratif, etc.)</p>
+                </div>
+
+            </section>
+            <h2 style="text-align: center;">Calculer votre Note</h2>
+            <form name="BC1SEMESTER1" action="BC1_Semester1.JS">
+                <div class="table_center">
+                    <table class="blueTable">
+                        <thead>
+                            <tr>
+                                <th colspan="5" style="text-align:center;">Semester
+                                    1</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Business communication 1</td>
+                                <td><input type="number" name="DS1" placeholder="DS1"></td>
+                                <td><input type="number" name="DS2" placeholder="DS2"></td>
+                                <td><input type="number" name="TP"  placeholder="TP"></td>
+                                <td><input type="number" name="result1"
+                                        onclick="Sum1(document.BC1SEMESTER1.DS1.value,document.BC1SEMESTER1.DS2.value,document.BC1SEMESTER1.TP.value)"
+                                        readonly placeholder="Resultat"></td>
+                            </tr>
+                            <tr>
+                                <td>Compétences numériques</td>
+                                <td><input type="number" name="x" placeholder="DS1"></td>
+                                <td><input type="number" name="y" placeholder="DS2"></td>
+                                <td><input type="number" name="z" placeholder="TP"></td>
+                                <td><input type="number" name="result2"
+                                        onclick="Sum2(document.BC1SEMESTER1.x.value,document.BC1SEMESTER1.y.value,BC1SEMESTER1.z.value)"
+                                        readonly placeholder="Resultat"></td>
+                            </tr>
+                            <tr>
+                                <td>Introduction au commerce electronique</td>
+                                <td><input type="number" name="a" placeholder="DS1"></td>
+                                <td><input type="number" name="b" placeholder="DS2"></td>
+                                <td><input type="number" name="c" placeholder="TP"></td>
+                                <td><input type="number" name="result3"
+                                        onclick="Sum3(document.BC1SEMESTER1.a.value,document.BC1SEMESTER1.b.value,BC1SEMESTER1.c.value)"
+                                        readonly placeholder="Resultat"></td>
+                            </tr>
+                            <tr>
+                                <td>Calcul actuariel</td>
+                                <td><input type="number" name="d" placeholder="DS1"></td>
+                                <td><input type="number" name="e" placeholder="DS2"></td>
+                                <td><input type="number" name="f" placeholder="TP"></td>
+                                <td><input type="number" name="result4"
+                                        onclick="Sum4(document.BC1SEMESTER1.d.value,document.BC1SEMESTER1.e.value,BC1SEMESTER1.f.value)"
+                                        readonly placeholder="Resultat"></td>
+                            </tr>
+                            <tr>
+                                <td>ASD1</td>
+                                <td><input type="number" name="g" placeholder="DS"></td>
+                                <td><input type="number" name="h" placeholder="Examen"></td>
+                                <td><input type="number" name="i" placeholder="TP"></td>
+                                <td><input type="number" name="result5"
+                                        onclick="Sum5(document.BC1SEMESTER1.g.value,document.BC1SEMESTER1.h.value,BC1SEMESTER1.i.value)"
+                                        readonly placeholder="Resultat"></td>
+                            </tr>
+                            <tr>
+                                <td>System logique</td>
+                                <td><input type="number" name="j" placeholder="DS"></td>
+                                <td><input type="number" name="k" placeholder="Examen"></td>
+                                <td><input type="number" name="l" placeholder="TP"></td>
+                                <td><input type="number" name="result6"
+                                        onclick="Sum6(document.BC1SEMESTER1.j.value,document.BC1SEMESTER1.k.value,BC1SEMESTER1.l.value)"
+                                        readonly placeholder="Resultat"></td>
+                            </tr>
+                            <tr>
+                                <td>Statistiques et probabilité</td>
+                                <td><input type="number" name="m" placeholder="DS"></td>
+                                <td><input type="number" name="n" placeholder="Examen"></td>
+                                <td><input type="number" name="o" placeholder="TP"></td>
+                                <td><input type="number" name="result7"
+                                        onclick="Sum7(document.BC1SEMESTER1.m.value,document.BC1SEMESTER1.n.value,BC1SEMESTER1.o.value)"
+                                        readonly placeholder="Resultat"></td>
+                            </tr>
+                            <tr>
+                                <td>Analyse</td>
+                                <td><input type="number" name="p" placeholder="DS"></td>
+                                <td><input type="number" name="q" placeholder="Examen"></td>
+                                <td><input type="number" name="r" placeholder="TP"></td>
+                                <td><input type="number" name="result8"
+                                        onclick="Sum8(document.BC1SEMESTER1.p.value,document.BC1SEMESTER1.q.value,BC1SEMESTER1.r.value)"
+                                        readonly placeholder="Resultat"></td>
+                            </tr>
+                            <tr>
+                                <td>Comptabilité générale</td>
+                                <td><input type="number" name="s" placeholder="DS"></td>
+                                <td><input type="number" name="t" placeholder="Examen"></td>
+                                <td><input type="number" name="u" placeholder="TP"></td>
+                                <td><input type="number" name="result9"
+                                        onclick="Sum9(document.BC1SEMESTER1.s.value,document.BC1SEMESTER1.t.value,BC1SEMESTER1.u.value)"
+                                        readonly placeholder="Resultat"></td>
+                            </tr>
+                            <tr>
+                                <td>Principes de gestion</td>
+                                <td><input type="number" name="az" placeholder="DS"></td>
+                                <td><input type="number" name="ae" placeholder="Examen"></td>
+                                <td><input type="number" name="ar" placeholder="TP"></td>
+                                <td><input type="number" name="result10"
+                                        onclick="Sum10(document.BC1SEMESTER1.az.value,document.BC1SEMESTER1.ae.value,BC1SEMESTER1.ar.value)"
+                                        readonly placeholder="Resultat"></td>
+                            </tr>
+                            <tr>
+                                <td>Architecture des ordinateurs</td>
+                                <td><input type="number" name="qs" placeholder="DS"></td>
+                                <td><input type="number" name="qd" placeholder="Examen"></td>
+                                <td><input type="number" name="qf" placeholder="TP"></td>
+                                <td><input type="number" name="result11"
+                                        onclick="Sum11(document.BC1SEMESTER1.qs.value,document.BC1SEMESTER1.qd.value,BC1SEMESTER1.qf.value)"
+                                        readonly placeholder="Resultat"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calculate">
+                    <input type="button" value="calculer" onclick="Result()">
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+            <a href="./BC1_Semester2.html"><footer><strong>-->Semester 2</strong></footer></a>
+        </body>
+    </html>
